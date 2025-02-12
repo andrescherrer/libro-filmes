@@ -1,0 +1,13 @@
+<div class="movie-list-container">
+    <h2>🎬 Filmes Populares</h2>
+    <div class="movie-grid">
+      <mat-card class="movie-card" *ngFor="let movie of movies">
+        <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" [alt]="movie.title" />
+        <mat-card-content>
+          <h3>{{ movie.title }}</h3>
+          <p>{{ movie.release_date | date }}</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  
