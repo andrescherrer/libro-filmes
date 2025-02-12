@@ -6,16 +6,16 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class MovieService {
-  private apiUrl = 'https://api.themoviedb.org/3/movie/popular';
+  private apiUrl = 'https://api.themoviedb.org/3';
   private apiKey = '03ed3b8e687fd639a5e6d2f1e42b5672';
 
   constructor(private http: HttpClient) {}
 
   getPopularMovies(page: number = 1): Observable<any> {
-    return this.http.get(`${this.apiUrl}?api_key=${this.apiKey}&language=pt-BR&page=${page}`);
+    return this.http.get(`${this.apiUrl}/movie/popular?api_key=${this.apiKey}&language=pt-BR&page=${page}`);
   }
 
   getMovieDetails(movieId: number): Observable<any> {
-    return this.http.get(`${this.apiUrl}/${movieId}?api_key=${this.apiKey}&language=pt-BR`);
+    return this.http.get(`${this.apiUrl}/movie/${movieId}?api_key=${this.apiKey}&language=pt-BR`);
   }
 }

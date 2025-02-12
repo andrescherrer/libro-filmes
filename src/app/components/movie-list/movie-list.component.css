@@ -25,6 +25,12 @@ h2 {
   transform: scale(1.05);
 }
 
+.movie-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 
 mat-card img {
   width: 100%;
