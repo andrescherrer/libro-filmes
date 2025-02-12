@@ -8,7 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 @Component({
   selector: 'app-movie-detail',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, ActivatedRoute, MovieService],
+  imports: [CommonModule, MatCardModule, MatButtonModule],
   templateUrl: './movie-detail.component.html',
   styleUrls: ['./movie-detail.component.css']
 })
