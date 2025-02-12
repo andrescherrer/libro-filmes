@@ -1,0 +1,28 @@
+.movie-detail-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .movie-detail-card {
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  mat-card-content p {
+    text-align: left;
+    margin: 10px 0;
+  }
+  
+  mat-card-image {
+    border-radius: 10px;
+  }
+  
+  mat-card-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
