@@ -9,5 +9,12 @@
         </mat-card-content>
       </mat-card>
     </div>
+
+    <mat-paginator 
+      [length]="totalResults"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="[20]" 
+      (page)="onPageChange($event)">
+    </mat-paginator>
   </div>
   
