@@ -1,6 +1,6 @@
 <div *ngIf="movie" class="movie-detail-container">
   <mat-card class="movie-detail-card">
-    <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" [alt]="movie.title" />
+    <img mat-card-image [src]="'https://image.tmdb.org/t/p/w500' + movie.backdrop_path" [alt]="movie.title" />
     <mat-card-content>
       <h2>{{ movie.title }}</h2>
       <p><strong>Data de lançamento:</strong> {{ movie.release_date | date }}</p>
